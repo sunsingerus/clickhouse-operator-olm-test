@@ -3,9 +3,9 @@
 #
 # Push clickhouse-operator to quay.io
 #
-# Should see application listed in quay.io account's Applications tab. 
+# As a result, we should see application listed in quay.io account on 'Applications' tab. 
 # IMPORTANT
-# If the application has a lock icon, edit 'Settings' and make the application public.
+# If the application listed on 'Applications' tab has a lock icon, edit 'Settings' and make the application public.
 
 BASE_DIR=/home/user/gocode/src/github.com/altinity/
 

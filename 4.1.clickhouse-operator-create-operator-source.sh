@@ -1,4 +1,4 @@
 #!/bin/bash
 
-kubectl apply -f clickhouse-operator-source.yaml
+kubectl apply -f "4.1.clickhouse-operator-source.yaml"
 

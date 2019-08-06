@@ -1,4 +1,7 @@
 #!/bin/bash
 
-kubectl get opsrc sunsingerus-operators -o=custom-columns=NAME:.metadata.name,PACKAGES:.status.packages -n marketplace
+CUR_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+source "${CUR_DIR}/0.config.sh"
+
+kubectl -n marketplace get opsrc "${QUAY_NAMESPACE}-operators" -o=custom-columns=NAME:.metadata.name,PACKAGES:.status.packages
 

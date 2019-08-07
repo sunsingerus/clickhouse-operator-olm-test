@@ -1,10 +1,18 @@
 apiVersion: operators.coreos.com/v1
 kind: OperatorSource
 metadata:
+  # Recommended name is "${QUAY_NAMESPACE}-operators"
   name: sunsingerus-operators
   namespace: marketplace
 spec:
   type: appregistry
   endpoint: https://quay.io/cnr
+  # Which namespace to look into for operator(s) in quay.io
+  # Specify registryNamespace="${QUAY_NAMESPACE}"
   registryNamespace: sunsingerus
 
+  publisher: Altinity
+  displayName: ClickHouse Operator
+  # The name of the k8s secret object that contains the authorization token to access private repositories.
+#  authorizatonToken:
+#    secretName: 

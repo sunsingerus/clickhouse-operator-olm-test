@@ -11,9 +11,9 @@ CUR_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 source "${CUR_DIR}/0.config.sh"
 
 operator-courier push \
-	"$OPERATOR_PACKAGE_DIR" \
-	"$QUAY_NAMESPACE" \
-	"$PACKAGE_NAME" \
-	"$PACKAGE_VERSION" \
-	"$TOKEN"
+	"${OPERATOR_PACKAGE_DIR}" \
+	"${QUAY_NAMESPACE}" \
+	"${PACKAGE_NAME}" \
+	"${PACKAGE_VERSION}" \
+	"${TOKEN}"
 

@@ -11,7 +11,7 @@ echo "Get all operator sources available:"
 kubectl -n marketplace get operatorsource
 
 echo "Get operator source:"
-kubectl -n marketplace get operatorsource "${QUAY_NAMESPACE}-operators"
+kubectl -n marketplace get operatorsource "altinity-clickhouse-operator"
 
 #
 # CatalogSource section
@@ -21,7 +21,7 @@ echo "Get all catalog sources available:"
 kubectl -n marketplace get catalogsource
 
 echo "Get catalog source:"
-kubectl -n marketplace get catalogsource "${QUAY_NAMESPACE}-operators"
+kubectl -n marketplace get catalogsource "altinity-clickhouse-operator"
 
 #
 # CatalogSourceConfig section

@@ -1,8 +1,7 @@
 apiVersion: operators.coreos.com/v1
 kind: OperatorSource
 metadata:
-  # Recommended name is "${QUAY_NAMESPACE}-operators"
-  name: sunsingerus-operators
+  name: altinity-clickhouse-operator
   namespace: marketplace
 spec:
   type: appregistry
@@ -14,5 +13,6 @@ spec:
   publisher: Altinity
   displayName: ClickHouse Operator
   # The name of the k8s secret object that contains the authorization token to access private repositories.
+  # More details: https://github.com/operator-framework/operator-marketplace/blob/master/docs/how-to-authenticate-private-repositories.md
 #  authorizatonToken:
-#    secretName: 
+#    secretName: "name of the kind: Secret object"

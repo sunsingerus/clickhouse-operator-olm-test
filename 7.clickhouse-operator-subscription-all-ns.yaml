@@ -1,0 +1,23 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: altinity-clickhouse-operator-subscription-all-ns
+
+# So far looks like Subscription is expected to be in the namespace where operator is expected
+# If your Operator supports watching all namespaces, change the namespace of the Subscription from marketplace to operators
+  namespace: operators
+spec:
+  # Specify package name to look for in 'kind: OperatorSource' object
+  name: clickhouse-operator
+
+  # Specify channel in this package to track
+  channel: latest
+
+  # Name of a CatalogSource that defines where and how to find the channel.
+  # In case CatalogSource is healthy, it has the same name as 'kind: OperatorSource' object, created earlier.
+  # Recommended name is "${QUAY_NAMESPACE}-operators"
+  source: altinity-clickhouse-operator
+
+  # Namespace where the CatalogSource is located
+  sourceNamespace: marketplace
+

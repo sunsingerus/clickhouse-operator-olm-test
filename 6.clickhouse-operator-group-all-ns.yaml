@@ -1,0 +1,19 @@
+apiVersion: operators.coreos.com/v1alpha2
+kind: OperatorGroup
+metadata:
+  name: altinity-clickhouse-operatorgroup-all-ns
+  # Namespace where operator runs
+  namespace: marketplace
+spec:
+  # Target namespaces. If set, OLM will ignore selector.
+  # Namespaces where operator have permissions to operate in
+  # If your Operator supports watching all namespaces you can leave the property spec.targetNamespace present but empty. 
+  # This will create an OperatorGroup that instructs the Operator to watch all namespaces.
+  targetNamespaces: []
+
+# An operator group consists of:
+# 1. A group of target namespaces
+# 2. The namespace that the operator group is created within known as the operator namespace.
+#    The operator namespace is where the operator actually runs and the target namespace(s) are namespaces the operator have permissions to operate in.
+#    The operator namespace is always considered to also be a target namespace, without regard to matching the label selector. 
+

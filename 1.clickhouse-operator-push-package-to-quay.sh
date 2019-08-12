@@ -8,7 +8,7 @@
 # If the application listed on 'Applications' tab has a lock icon, edit 'Settings' and make the application public.
 
 CUR_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-source "${CUR_DIR}/0.config.sh"
+source "${CUR_DIR}/config.sh"
 
 operator-courier push \
 	"${OPERATOR_PACKAGE_DIR}" \

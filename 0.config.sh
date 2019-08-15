@@ -13,7 +13,7 @@ PACKAGE_NAME="clickhouse-operator"
 
 # Package version of operator OLM package
 # It is expected to be the same as described in the package itself
-PACKAGE_VERSION="0.4.4"
+PACKAGE_VERSION="0.5.0"
 
 # Namespace a.k.a. username on htrtps://quay.io Free tariff plan works fine.
 QUAY_NAMESPACE="sunsingerus"

@@ -7,7 +7,7 @@ metadata:
   namespace: marketplace
 spec:
   # Specify package name to look for in 'kind: OperatorSource' object
-  name: clickhouse-operator
+  name: clickhouse
 
   # Specify channel in this package to track
   channel: latest

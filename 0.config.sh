@@ -5,15 +5,15 @@ BASE_DIR="$(realpath "${CUR_DIR}/..")"
 
 
 # Dir where OLM operator package and all other files are located
-OPERATOR_PACKAGE_DIR="${BASE_DIR}/community-operators/upstream-community-operators/clickhouse-operator/"
+OPERATOR_PACKAGE_DIR="${BASE_DIR}/community-operators/upstream-community-operators/clickhouse/"
 
 # Package name of operator OLM package
 # It is expected to be the same as described in the package itself
-PACKAGE_NAME="clickhouse-operator"
+PACKAGE_NAME="clickhouse"
 
 # Package version of operator OLM package
 # It is expected to be the same as described in the package itself
-PACKAGE_VERSION="0.5.0"
+PACKAGE_VERSION="0.6.0"
 
 # Namespace a.k.a. username on htrtps://quay.io Free tariff plan works fine.
 QUAY_NAMESPACE="sunsingerus"
